@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mithun R | Portfolio</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Decorative Background Circles */
+body::before, body::after {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    z-index: -1;
+}
+
+body::before {
+    top: -120px;
+    left: -120px;
+}
+
+body::after {
+    bottom: -120px;
+    right: -120px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+/* Profile Image Style */
+.profile-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+header h1 {
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+header p {
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 26px;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00d4ff;
+    transform: scale(1.2);
+}
+
+/* Glass Card Sections */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+h2 {
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: white;
+    color: #243b55;
+    padding: 8px 15px;
+    margin: 6px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Video */
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- Make sure your image name is profile.jpg -->
+    <img src="profile.jpg.jpeg" alt="Mithun R Profile" class="profile-img">
+    <h1>Mithun R</h1>
+    <p>
+    Electronics & Communication Engineering Student <br>
+    <span style="color:#00d4ff; font-weight:bold;">
+        Aspiring Software Developer
+    </span>
+</p>
+
+
+    <!-- LinkedIn & GitHub Links -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/mithun-r-3a446b380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Mithun04122004" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am Mithun R. I am from Ooty, currently pursuing my Bachelor's Degree 
+        in Kalaignar Karunanidhi Institute of Technology in the stream of 
+        Electronics and Communication Engineering. I am good in problem solving. 
+        My hobbies are playing cricket. My strength is positive thinking 
+        and continuous learning.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Problem Solving</span>
+        <span>Java</span>
+        <span>HTML & CSS</span>
+        <span>SQL</span>
+    </div>
+</section>
+
+<section>
+    <h2>Project</h2>
+    <h3>BMI Calculator</h3>
+    <p>
+        Developed a Body Mass Index (BMI) calculator project to calculate 
+        body weight category using the standard BMI formula.
+    </p>
+</section>
+
+<section>
+    <h2>Intro Video</h2>
+    <!-- Make sure your video name is intro.mp4 -->
+    <video controls>
+        <source src="intro.vedio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: mithunrajkumar07@gmail.com</p>
+    <p>Phone: +91 8637400702</p>
+</section>
+
+<footer>
+    © 2026 Mithun R | Portfolio
+</footer>
+
+</body>
+</html>
